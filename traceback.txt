@@ -1,0 +1,43 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 25, in script
+    "On another dreary 10:00 AM lecture in Kane hall..."
+IOError: Couldn't find file 'university.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 25, in script
+    "On another dreary 10:00 AM lecture in Kane hall..."
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/ast.py", line 593, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/exports.py", line 1033, in say
+    who(what, interact=interact)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/character.py", line 688, in do_display
+    **display_args)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/character.py", line 491, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/ui.py", line 247, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/display/core.py", line 2243, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/display/core.py", line 2522, in interact_core
+    renpy.audio.audio.interact()
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/audio/audio.py", line 792, in interact
+    periodic()
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/audio/audio.py", line 726, in periodic
+    c.periodic()
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/audio/audio.py", line 342, in periodic
+    topf = load(self.file_prefix + topq.filename + self.file_suffix)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/audio/audio.py", line 76, in load
+    rv = renpy.loader.load(fn)
+  File "/Users/spotco/Downloads/renpy-6.99.1-sdk/renpy/loader.py", line 450, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'university.mp3'.
+
+Darwin-14.1.0-x86_64-i386-64bit
+Ren'Py 6.99.1.329
+Aldshota Zero 0.0
