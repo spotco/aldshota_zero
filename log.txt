@@ -1,4 +1,4 @@
-Thu Apr 23 11:33:50 2015
+Thu Apr 23 20:58:57 2015
 Darwin-14.1.0-x86_64-i386-64bit
 Ren'Py 6.99.1.329
 Aldshota Zero 0.0
@@ -155,8 +155,11 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017667 seconds.
-- Frame drawn at 0.030998 seconds.
-- Frame drawn at 0.047071 seconds.
-- Frame drawn at 0.064744 seconds.
-- 0.064744 seconds to render 5 frames.
+- Frame drawn at 0.021102 seconds.
+- Frame drawn at 0.039453 seconds.
+- Frame drawn at 0.047547 seconds.
+- Frame drawn at 0.065000 seconds.
+- 0.065000 seconds to render 5 frames.
+
+Windowed mode.
+Screen sizes: virtual=(800, 600) physical=(1338, 798)

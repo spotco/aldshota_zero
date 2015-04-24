@@ -4,6 +4,10 @@ image bg aldshota_zero = "bg_aldshota_zero.png"
 image bg classroom = "bg_classroom.png"
 image bg roof = "bg_roof.png"
 image bg sex = "bg_sex.png"
+image bg explosion = "bg_explosion.png"
+image bg shark = "bg_shark.png"
+image bg treasure = "bg_treasure.png"
+image bg robot = "bg_robot.png"
 
 define professor = Character("Professor",color="#B3B3B3")
 
@@ -114,7 +118,6 @@ label choice_no:
 label choice_end:
  hide lainee with dissolve
  inaho "Well, I guess I don't have anything better to do..."
-
  scene bg roof with fade
  play music "music_roof.mp3"
  show inaho normal at left with moveinleft
@@ -144,6 +147,61 @@ label choice_end:
  scene bg sex with fade
  play music "music_sex.mp3"
  play sound "sfx_scared.mp3"
- "Your ending here."
-
+ "As they were starting to get busy..."
+ inaho "Slaine..."
+ scene bg explosion with fade
+ "**CRASH**"
+ show slaine normal at right with dissolve
+ show inaho normal at left with dissolve
+ "The door blew open, and seeing this both Slaine and Inaho jumped off the roof (with parachutes)."
+ slaine "Inaho, don't let go!!!"
+ "They hold hands tightly as they fall into the school swimming pool which unfortunately..."
+ scene bg shark with fade
+ "is full of sharks."
+ show lainee normal with dissolve
+ lainee "OMG what now??? @_@;;"
+ menu:
+  "Come at him":
+   jump shark
+  ";;;;;_;;;;;;":
+   jump shark
+  "fly away":
+   jump shark
+  "''entertain'' the shark":
+   jump shark
+label shark:
+ "...so they decide to jump the shark..."
+ show slaine normal at right with dissolve
+ show inaho normal at left with dissolve
+ inaho "Slaine, do you see that sparkly thing at the bottom of the pool?"
+ slaine "That must be Asseylum's pendant from Ep1 S1!!!!"
+ "Slaine, summoning strength unexpected of his little shota body, punches the shark and knocks it straight to New England."
+ show bg treasure with dissolve
+ show inaho normal at left with dissolve
+ inaho "so stronk"
+ "They dive down to get the pendant, but Slaine can't swim."
+ inaho "its okay ill share my breath with you"
+ show lainee with dissolve
+ lainee "imaho i love ur seme charms waaaaahhhhhh~~~"
+ "They discovered the treasure was just a bandaid(tm) at the bottom of the pool (as luminous as the sun)."
+ "Inaho sees that slaine has a wound and takes this pool bandaid and puts it on slaines wound."
+ lainee "YEESSS 4get about aseylum hime u only need each other~~~~~~~<3"
+ "Inaho tenderly lifts slaine out of the pool"
+ show slaine normal at right with dissolve
+ slaine "I'm sorry I wasn't stronk enuf"
+ "Inaho strokes slaines face soft..."
+ inaho "the fuc u talking about m8 u punched that shark in the face lel"
+ slaine "We need to escape cuz most otakus NOTP us"
+ lainee "BOOOOOO fuc the h8rs inahoxslaine4lyf"
+label test:
+ show bg robot with dissolve
+ "In order to skip the legion of NOTP-ers, they get into that one orange training kataphract just like in Rebuild of eva 3"
+ "Some slaine has a timed explosion collar around his neck, you can guess what happens (kawrou also had white hair)"
+ show bg kanehall with fade
+ show lainee normal with dissolve
+ play music "music_lel.mp3"
+ professor "Your dissertaion on this OTP was incredible, we're incredibly pleased to give you our very first..."
+ professor "PHD in Shotaology. Congratulations, Dr. Lainee"
+ lainee "I'd like to thank Slaine."
+ "THE END"
  return
